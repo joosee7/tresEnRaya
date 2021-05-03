@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    background-color: #CFE795;
+    font-family: sans-serif;
+    /* position: relative; */
+}
+
+h1 {
+    color: #5AD2F4;
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+}
+
+h2 {
+    color: #5AD2F4;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.squares {
+    border: solid 2px black;
+    width: 10rem;
+    height: 10rem;
+    border-radius: 25px;
+    margin: 2px;
+    min-width: 160px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+li {
+    list-style-type: none;
+}
+
+.rows {
+    display: inline-block;
+    text-align: center;
+    margin: auto;
+}
+
+#game {
+    text-align: center;
+    margin: auto;
+}
+
+.playersEntrance {
+    text-align: center;
+    margin: auto;
+}
+
+#startButton {
+    width: 15em;
+    height: 2.5rem;
+    margin: 20px;
+    font-size: 20px;
+    border-radius: 25px;
+    border: 0;
+    /* margin-top: -0.1px; */
+}
+
+#startButton:hover {
+    border: solid 1px #5AD2F4;
+    color: black;
+    /* font-size: 22px; */
+}
+
+.namePlayerInput {
+    width: 15rem;
+    height: 2rem;
+    border: 0;
+    border-radius: 25px;
+    margin: -20px 0 20px 0;
+    font-size: 20px;
+}
+
+#popUp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 7.3rem auto 7.5rem auto;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 20px;
+}
+
+#closePopUpIcon {
+    width: 3rem;
+    float: right;
+    /* margin: -65px 20px; */
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    margin-bottom: 20px;
+}
+
+.playAgainButtons {
+    width: 15rem;
+    height: 4rem;
+    border-radius: 25px;
+    border: 0px;
+    color: black;
+    font-size: 25px;
+    padding: 2px;
+    /* left: 50%;
+    top: 50%; */
+    /* margin: 27rem 0 0 5rem; */
+    /* margin: 39% 0 0 2%; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    
+}
+
+.playAgainButtons:hover {
+    border: solid 1px #5AD2F4;
+    color: black;
+    font-size: 27px;
+}
+
+.d-none {
+    display: none;
+}
+
+#popUpPhrase {
+    font-size: 30px;
+    position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+    padding: 80px;
+}
+
+#popUpTitle {
+    font-size: 60px;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1440px) {
+    #popUp {
+        width: 37rem;
+        height: 32rem;
+        background-color: rgba(255, 255, 255, 0.98);
+    }
+}
+@media (min-width: 1439px) {
+    #popUp {
+        width: 58rem;
+        height: 32rem;
+    }
+}
+
+
+
+/* Enlaces para centrar:
+https://escss.blogspot.com/2012/05/centrando-al-centro-con-css-16-maneras.html
+https://escss.blogspot.com/2012/04/repaso-lo-basico-y-lo-mas-nuevo.html */
+
+/* El enlace que me ha salvado: 
+https://es.stackoverflow.com/questions/36554/poner-botones-al-fondo-del-contenedor */
+
+/* Paleta de colores: 
+https://coolors.co/d4c685-f7ef81-cfe795-a7d3a6-5ad2f4 */

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres en Raya</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!--Página de logueo-->
+    <main id="initialPage">
+        <h1>¡Bienvenido al tres en Raya!</h1>
+        <div id="playersEntrance">
+            <h2>Nombre del primer jugador:</h2>
+            <input type="text" class="namePlayerInput" id="firstPlayer">
+            <h2>Nombre del segundo jugador:</h2>
+            <input type="text" class="namePlayerInput" id="secondPlayer">
+            <br>
+            <button id="startButton" onclick="saveNames()">Comenzar</button>
+        </div>
+    </main>
+<!--Página de juego-->
+    <main id="gamePage" class="d-none">
+        <h1>¡Vamos a jugar!</h1>
+        <h2 id="nextPlayer"></h2>
+        <div id="game">
+                <ul class="rows">
+                    <li><a href="javascript: play(0, 0)"><img class="squares" id="column_0-row_0" src="./images/startImage.png" alt="startImage"></a></li>
+                    <li><a href="javascript: play(0, 1)"><img class="squares" id="column_0-row_1" src="./images/startImage.png" alt="startImage"></a></li>
+                    <li><a href="javascript: play(0, 2)"><img class="squares" id="column_0-row_2" src="./images/startImage.png" alt="startImage"></a></li>
+                </ul>
+                <ul class="rows">
+                    <li><a href="javascript: play(1, 0)"><img class="squares" id="column_1-row_0" src="./images/startImage.png" alt="startImage"></a></li>
+                    <li><a href="javascript: play(1, 1)"><img class="squares" id="column_1-row_1" src="./images/startImage.png" alt="startImage"></a></li>
+                    <li><a href="javascript: play(1, 2)"><img class="squares" id="column_1-row_2" src="./images/startImage.png" alt="startImage"></a></li>
+                </ul>
+                <ul class="rows">
+                    <li><a href="javascript: play(2, 0)"><img class="squares" id="column_2-row_0" src="./images/startImage.png" alt="startImage"></a></li>
+                    <li><a href="javascript: play(2, 1)"><img class="squares" id="column_2-row_1" src="./images/startImage.png" alt="startImage"></a></li>
+                    <li><a href="javascript: play(2, 2)"><img class="squares" id="column_2-row_2" src="./images/startImage.png" alt="startImage"></a></li>
+                </ul>
+                <button class="d-none playAgainButtons playAgainButtons:hover" id="playAOut" onclick="window.location.reload()">¡Empezar de nuevo!</button>
+        </div>
+        <!-- <button onclick="checkWin()">Prueba</button> -->
+    </main>
+<!--PopUp de las alertas de win o draw-->
+    <main class="d-none" id="popUp">
+        <h2 id="popUpTitle"></h2>
+        <p id="popUpPhrase"></p>
+        <a href="javascript: closePopUp()"><img src="./images/closeWindow.png" alt="closePopUpIcon" id="closePopUpIcon"></a>
+        <button class="playAgainButtons playAgainButtons:hover" id="playAIn">¡Revancha!</button>
+    </main>
+    <script src="./main.js"></script>
+</body>
+</html>
+
